@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Google reCAPTCHA secret key
-const secretKey = '6LdmE1kqAAAAAJn4i-pwK3lsBf_yxuuz5lB3AUk0';
+const secretKey = 'YOUR_KEY';
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
