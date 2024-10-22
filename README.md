@@ -11,7 +11,7 @@ This repository contains examples and implementations of secure coding practices
 - [Database Security](https://github.com/thenujad/software-security-developments/tree/main/Database_Security)
 - [Secure Coding Practices for Error Handling](https://github.com/thenujad/software-security-developments/tree/main/Secure_Coding_Practices_for_Error_Handling)
 - [Secure Coding Practices for Input Validation](https://github.com/thenujad/software-security-developments/tree/main/Secure_Coding_Practices_for_Input_Validation)
-- [Secure Coding Practices for Session Management](#Secure_Coding_Practices_for_Session_Management)
+- [Secure Coding Practices for Session Management](https://github.com/thenujad/software-security-developments/tree/main/Secure_Coding_Practices_for_Session_Management)
 - [Test recap security](https://github.com/thenujad/software-security-developments/tree/main/Test_recap_security)
 ---
 
