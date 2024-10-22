@@ -7,12 +7,12 @@ Here is a `README.md` that explains each code within the specified folders:
 This repository contains examples and implementations of secure coding practices and various security-related concepts such as Buffer Overflow prevention, Database Security, Error Handling, and Input Validation.
 
 ## Table of Contents
-- [Buffer Overflow](#Buffer_Overflow)
-- [Database Security](#Database_Security)
-- [Secure Coding Practices for Error Handling](#Secure_Coding_Practices_for_Error_Handling)
-- [Secure Coding Practices for Input Validation](#Secure_Coding_Practices_for_Input_Validation)
+- [Buffer Overflow](https://github.com/thenujad/software-security-developments/tree/main/Buffer_Overflow)
+- [Database Security](https://github.com/thenujad/software-security-developments/tree/main/Database_Security)
+- [Secure Coding Practices for Error Handling](https://github.com/thenujad/software-security-developments/tree/main/Secure_Coding_Practices_for_Error_Handling)
+- [Secure Coding Practices for Input Validation](https://github.com/thenujad/software-security-developments/tree/main/Secure_Coding_Practices_for_Input_Validation)
 - [Secure Coding Practices for Session Management](#Secure_Coding_Practices_for_Session_Management)
-- [Test recap security](#Test_recap_security)
+- [Test recap security](https://github.com/thenujad/software-security-developments/tree/main/Test_recap_security)
 ---
 
 ### Buffer Overflow
