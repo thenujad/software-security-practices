@@ -86,6 +86,40 @@ This repository contains examples and implementations of secure coding practices
       - Password: Must contain a mix of uppercase, lowercase, numbers, and special characters.
     - Displays error messages below each field when the input is invalid.
   
+
+### Secure Coding Practices for Session Management
+
+**Folder**: `session_management`
+
+1. **Session Handling Script** (`session.php`):
+    - A PHP script that demonstrates secure session management.
+    - Utilizes `session_start()` to initiate a session and sets secure cookie parameters.
+    - Implements session regeneration to prevent session fixation attacks.
+    - Contains functionality to destroy the session upon user logout.
+
+2. **Session Configuration** (`config.php`):
+    - A configuration file that specifies settings for session handling, including session lifetime and storage settings.
+    - Ensures that sensitive session data is not exposed and follows best practices for session security.
+
+### Test Recap Security
+
+**Folder**: `recaptcha_security`
+
+1. **Login Form with reCAPTCHA (Frontend)** (`login.html`):
+    - An HTML form that integrates Google reCAPTCHA for user authentication.
+    - It includes fields for username and password, along with a reCAPTCHA widget to verify that the user is not a bot.
+    - The form submits data via POST method to the server for processing.
+
+2. **Login Script (Backend)** (`login.js`):
+    - A Node.js script that handles login requests and verifies reCAPTCHA responses.
+    - It checks whether the reCAPTCHA response is present and valid by making a request to Google's reCAPTCHA API.
+    - Upon successful verification, it checks the username and password against hardcoded values (as a placeholder for real credential verification).
+    - Implements error handling for reCAPTCHA verification failures and logs any errors that occur.
+
+3. **Stylesheet** (`style.css`):
+    - A CSS file that styles the login form for a clean and user-friendly interface.
+    - It provides styles for the login box, input fields, buttons, and responsive design for various screen sizes.
+
 ---
 
 ## How to Run
@@ -114,17 +148,19 @@ This repository contains examples and implementations of secure coding practices
    - For server-side validation, integrate the `validation.js` with backend code (e.g., in a Node.js/Express or PHP server).
 
 5. **Session Management**:
-   - Open the `registration.html` file in a web browser and interact with the form.
-   - For server-side validation, integrate the `validation.js` with backend code (e.g., in a Node.js/Express or PHP server).
+   - Open the `session.php` script in a PHP server environment to test session handling functionalities.
+   - Ensure that session settings in `config.php` are configured correctly to enhance security.
 
-6. **Input Validation**:
-   - Open the `registration.html` file in a web browser and interact with the form.
-   - For server-side validation, integrate the `validation.js` with backend code (e.g., in a Node.js/Express or PHP server).
+
+6. **Test Recap Security**:
+   - Set up a Node.js environment and install necessary dependencies.
+   - Run the server script to test the login functionality with reCAPTCHA.
+   - Access the login form through a web browser and attempt to log in using various inputs to verify the reCAPTCHA and login process.
 
 
 ## Notes
 
 - Always ensure that proper input validation and error handling practices are followed in production environments to prevent security vulnerabilities.
-- SQL injection and buffer overflow are common vulnerabilities that must be mitigated using safe coding practices.
+- SQL injection, buffer overflow, and reCAPTCHA validation are common vulnerabilities that must be mitigated using safe coding practices.
 - For more details on securing web applications, refer to OWASP's guidelines and best practices.
 
