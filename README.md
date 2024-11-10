@@ -9,7 +9,7 @@ This repository contains examples and implementations of secure coding practices
 - [✅ Secure Coding Practices for Input Validation](https://github.com/thenujad/software-security-developments/tree/main/Secure_Coding_Practices_for_Input_Validation)
 - [🔒 Secure Coding Practices for Session Management](https://github.com/thenujad/software-security-developments/tree/main/Secure_Coding_Practices_for_Session_Management)
 - [🧪 Test recap security](https://github.com/thenujad/software-security-developments/tree/main/Test_recap_security)
-- [⚔️ Cross-Site Scripting (XSS) Prevention](https://github.com/thenujad/software-security-developments/tree/main/Unsecure_Node_Application_for_Reflected_XSS)
+- [⚔️ Cross-Site Scripting (XSS) Prevention](https://github.com/thenujad/software-security-developments/tree/main/Cross-Site_Scripting_XSS_Prevention)
 
 ---
 
