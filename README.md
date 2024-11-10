@@ -9,6 +9,8 @@ This repository contains examples and implementations of secure coding practices
 - [✅ Secure Coding Practices for Input Validation](https://github.com/thenujad/software-security-developments/tree/main/Secure_Coding_Practices_for_Input_Validation)
 - [🔒 Secure Coding Practices for Session Management](https://github.com/thenujad/software-security-developments/tree/main/Secure_Coding_Practices_for_Session_Management)
 - [🧪 Test recap security](https://github.com/thenujad/software-security-developments/tree/main/Test_recap_security)
+- [⚔️ Cross-Site Scripting (XSS) Prevention](https://github.com/thenujad/software-security-developments/tree/main/Unsecure_Node_Application_for_Reflected_XSS)
+
 ---
 
 ### 🔐 Buffer Overflow
@@ -121,6 +123,27 @@ This repository contains examples and implementations of secure coding practices
 
 ---
 
+### ⚔️ Cross-Site Scripting (XSS) Prevention
+
+**Folder**: `cross_site_scripting`
+
+1. **Unsecure Node.js Application for Reflected XSS** (`reflected-unsecure.js`):
+    - ⚠️ Demonstrates a vulnerable Node.js application where user input is reflected directly into the HTML without sanitization.
+    - 🚨 Can be tested by submitting a `<script>alert("Reflected XSS Attack!")</script>` payload to trigger an alert.
+
+2. **Secure Node.js Application for Reflected XSS** (`reflected-secure.js`):
+    - 🛡️ This version uses the `escape-html` module to sanitize user input before rendering it to prevent the execution of script tags.
+    - ✅ Protects the application from reflected XSS attacks by encoding user input.
+
+3. **Unsecure Node.js Application for Stored XSS** (`stored-unsecure.js`):
+    - ⚠️ An example of a vulnerable application where user comments are stored and rendered without sanitization.
+    - 🛑 Demonstrates stored XSS by allowing `<script>` payloads to execute whenever the page is reloaded.
+
+4. **Secure Node.js Application for Stored XSS** (`stored-secure.js`):
+    - 🛡️ Uses the `xss` module to sanitize user input before storing and rendering it.
+    - ✅ Prevents the execution of malicious scripts, securing the application from stored XSS attacks.
+
+---
 ## 🏃‍♂️ How to Run
 
 1. **Buffer Overflow Examples**:
@@ -155,6 +178,23 @@ This repository contains examples and implementations of secure coding practices
    - 💻 Set up a Node.js environment and install necessary dependencies.
    - 🏃‍♂️ Run the server script to test the login functionality with reCAPTCHA.
    - 🖥️ Access the login form through a web browser and attempt to log in using various inputs to verify the reCAPTCHA and login process.
+
+
+7. **Cross-Site Scripting (XSS) Examples**:
+   - 🗂️ Navigate to the `cross_site_scripting` folder.
+   - 💻 Install required dependencies:
+     ```bash
+     npm install express body-parser escape-html xss
+     ```
+   - 🏃‍♂️ Run the desired example using:
+     ```bash
+     node reflected-unsecure.js
+     node reflected-secure.js
+     node stored-unsecure.js
+     node stored-secure.js
+     ```
+
+   - 🖥️ Access each application on their respective ports (e.g., `http://localhost:3000` for `reflected-unsecure.js`, `http://localhost:3001` for `reflected-secure.js`, etc.) and test with provided payloads to observe secure and unsecure behaviors.
 
 
 ## 💡 Notes
